@@ -6,7 +6,7 @@
  */
 
 include "headers_settings.php"; //  add headers for cors
-include "configDB.php";         //  sets for database connection
+include "connectDB.php";         //  sets for database connection
 
 session_start();
 
@@ -24,9 +24,12 @@ if (isset($login) && isset($password)) {
     $query = $pdo->query("SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password'");
     $user = $query->fetch(PDO::FETCH_LAZY);
     if ($user != 0) {                                       //  if user exists set cookies and sign in. Either send error
-        $_SESSION["login"] = $user["login"];
-        setcookie("userId", $user["id"], time()+360, "/");
-        setcookie("sessionId", $user["id"], time()+360, "/");
+        $permitted_chars = '0123456789abcdefghijklmnopqrstuvwxyz';
+        $hash = md5(substr(str_shuffle($permitted_chars), 0, 10));
+        $_SESSION["hash"] = $hash;
+        setcookie("userHash", $hash, time()+360, "/");
+        $query = $pdo->prepare("UPDATE `users` SET `hash` = ? WHERE `id` = ?");
+        $query->execute([$hash, $user["id"]]);
         echo json_encode(["ok"=>true]);
     } else {
         header("HTTP/1.1 400 Bad Request. No such user");

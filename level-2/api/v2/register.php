@@ -6,7 +6,7 @@
  */
 
 include "headers_settings.php"; //  add headers for cors
-include "configDB.php";         //  sets for database connection
+include "connectDB.php";         //  sets for database connection
 
 $userData = json_decode(file_get_contents("php://input"), true);    // input data from user
 

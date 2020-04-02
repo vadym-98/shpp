@@ -8,12 +8,13 @@ if (!isset($_SESSION)) {
     session_start();
 }
 include "headers_settings.php"; //  add headers for cors
-include "configDB.php";         //  sets for database connection
+include "connectDB.php";         //  sets for database connection
 
 /**
  * if cookies time run out, or you end session it will ask you to sign in again.
  */
-if (isset($_COOKIE["sessionId"]) || isset($_SESSION["login"])) {
+include "checkAuthorization.php";
+if (isset($hash["hash"])) {
     $text = json_decode(file_get_contents("php://input"), true);// read users todos task
     if ($text['text'] !== "") {
         $query = $pdo->prepare("INSERT INTO `todos` (`text`, `checked`) VALUES (:text, :checked)");

@@ -14,7 +14,8 @@ include "createTable.php";      // create table in case it doesnt exist
 /**
  * if cookies time run out, or you end session it will ask you to sign in again.
  */
-if (isset($_COOKIE["sessionId"]) || isset($_SESSION["login"])) {
+include "checkAuthorization.php";
+if (isset($hash["hash"])) {
     $query = $pdo->query("SELECT * FROM `todos` ");
     $arr = [];
     while ($row = $query->fetch(PDO::FETCH_LAZY)) {
@@ -25,6 +26,7 @@ if (isset($_COOKIE["sessionId"]) || isset($_SESSION["login"])) {
         "items"=>$arr
     );
     echo json_encode($arr);
-} else {
-    echo json_encode(["error" => "Sign in please!"]);
+    exit();
 }
+
+echo json_encode(["error" => "Sign in please!"]);
