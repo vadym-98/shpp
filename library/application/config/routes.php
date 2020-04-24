@@ -27,11 +27,15 @@ return [
         "controller" => "main",
         "action" => "index"
     ],
+    "\?book_name=[\w%]+" => [
+        "controller" => "main",
+        "action" => "index"
+    ],
     "{offset:\d+}" => [
         "controller" => "main",
         "action" => "index"
     ],
-    "book/{id:\d+}" => [
+    "book/{img:\d+}" => [
         "controller" => "main",
         "action" => "book"
     ],

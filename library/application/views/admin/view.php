@@ -20,18 +20,28 @@
                 <tbody>
                 <?php unset($vars['icons']);
                 foreach($vars as $var) {
-                    $id = $var["id"];
-                    unset($var["id"]);?>
+                    $img = $var["img"];
+                    unset($var["img"]);
+                    $clicks = $var['clicks'];
+                    unset($var['clicks']);
+                    unset($var['deleted']);?>
                     <tr>
+                        <td>
+                            <div class="d-flex">
+                                <img src="/public/images/books/<?=$img?>.jpg" alt="image"
+                                                     style="height: 50px; width: auto; margin-right: 5px; display: block">
+                                <p><?php echo $var['book_name']; unset($var['book_name']);?></p>
+                            </div>
+                        </td>
                     <?php foreach ($var as $value) {?>
                         <td><?=$value?></td>
                     <?php } ?>
                         <td>
                             <form action="/admin/delete" method="post">
-                                <button class="btn btn-danger" name="del" value="<?=$id?>">Удалить</button>
+                                <button class="btn btn-danger" name="del" value="<?=$img?>">Удалить</button>
                             </form>
                         </td>
-                        <td></td>
+                        <td><?=$clicks?></td>
                     </tr>
                 <?php }?>
                 </tbody>
@@ -70,6 +80,9 @@
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="автор3" name="author3">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="автор4" name="author4">
                             </div>
                             <div class="input-group">
                                 <textarea class="form-control" aria-label="With textarea" placeholder="описание книги" name="description">

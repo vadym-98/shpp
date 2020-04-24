@@ -10,7 +10,7 @@ $(document).ready(function() {
             url: "/click",
             dataType: "json",
             data: {
-                "id": btn.val(),
+                "img": btn.val(),
             }
         });
     })

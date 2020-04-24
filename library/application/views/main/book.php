@@ -2,24 +2,24 @@
     <div class="container">
         <div id="content" class="book_block col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <script id="pattern" type="text/template">
-                <div data-book-id="<?=$id?>" class="book_item col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <div data-book-id="<?=$img?>" class="book_item col-xs-6 col-sm-3 col-md-2 col-lg-2">
                     <div class="book">
-                        <a href="book?id=<?=$id?>"><img src="/public/images/books/<?=$id?>.jpg" alt="<?=$book_name?>">
+                        <a href="book?id=<?=$img?>"><img src="/public/images/books/<?=$img?>.jpg" alt="<?=$book_name?>">
                             <div data-title="<?=$book_name?>" class="blockI">
                                 <div data-book-title="<?=$book_name?>" class="title size_text"><?=$book_name?></div>
-                                <div data-book-author="<?=$authors?>" class="author"><?=$authors?></div>
+                                <div data-book-author="<?=$author_name?>" class="author"><?=$author_name?></div>
                             </div>
                         </a>
-                        <a href="book?id=<?=$id?>">
+                        <a href="book?id=<?=$img?>">
                             <button type="button" class="details btn btn-success">Читать</button>
                         </a>
                     </div>
                 </div>
             </script>
-            <div id="id" book-id="<?=$id?>">
+            <div id="id" book-id="<?=$img?>">
                 <div id="bookImg" class="col-xs-12 col-sm-3 col-md-3 item" style="
     margin:;
-"><img src="/public/images/books/<?=$id?>.jpg" alt="Responsive image" class="img-responsive">
+"><img src="/public/images/books/<?=$img?>.jpg" alt="Responsive image" class="img-responsive">
 
                     <hr>
                 </div>
@@ -29,14 +29,14 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="bookLastInfo">
-                            <div class="bookRow"><span class="properties">автор:</span><span id="author"><?=$authors?></span></div>
+                            <div class="bookRow"><span class="properties">автор:</span><span id="author"><?=$author_name?></span></div>
                             <div class="bookRow"><span class="properties">год:</span><span id="year"><?=$year?></span></div>
                             <div class="bookRow"><span class="properties">страниц:</span><span id="pages">351</span></div>
                             <div class="bookRow"><span class="properties">isbn:</span><span id="isbn"></span></div>
                         </div>
                     </div>
                     <div class="btnBlock col-xs-12 col-sm-12 col-md-12">
-                        <button type="button" class="btnBookID click btn-lg btn btn-success" value="<?=$id?>">Хочу читать!</button>
+                        <button type="button" class="btnBookID click btn-lg btn btn-success" value="<?=$img?>">Хочу читать!</button>
                     </div>
                     <div class="bookDescription col-xs-12 col-sm-12 col-md-12 hidden-xs hidden-sm">
                         <h4>О книге</h4>

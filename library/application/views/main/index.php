@@ -3,22 +3,23 @@
 <!--    <h3>--><?//=$val["title"]?><!--</h3>-->
 <!--    <p>--><?//=$val["text"]?><!--</p>-->
 <!--    <hr>-->
-<?php //endforeach;?>
+<?php//endforeach;?>
 
 <section id="main" class="main-wrapper">
     <div class="container">
         <div id="content" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <?php unset($vars['offset']);
+                unset($vars['booksAmount']);
                 foreach ($vars as $var) { ?>
-                <div data-book-id="<?=$var["id"]?>" class="book_item col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                <div data-book-id="<?=$var["img"]?>" class="book_item col-xs-6 col-sm-3 col-md-2 col-lg-2">
                     <div class="book">
-                        <a href="book/<?=$var["id"]?>" class="statistic"><img src="public/images/books/<?=$var["id"]?>.jpg" alt="<?=$var["book_name"]?>">
+                        <a href="book/<?=$var["img"]?>" class="statistic"><img src="public/images/books/<?=$var["img"]?>.jpg" alt="<?=$var["book_name"]?>">
                             <div data-title="<?=$var["book_name"]?>" class="blockI" style="height: 46px;">
                                 <div data-book-title="<?=$var["book_name"]?>" class="title size_text"><?=$var["book_name"]?></div>
-                                <div data-book-author="<?=$var["authors"]?>" class="author"><?=$var["authors"]?></div>
+                                <div data-book-author="<?=$var["author_name"]?>" class="author"><?=$var["author_name"]?></div>
                             </div>
                         </a>
-                        <a href="book/<?=$var["id"]?>">
+                        <a href="book/<?=$var["img"]?>">
                             <button type="button" class="details detail btn btn-success">Читать</button>
                         </a>
                     </div>
@@ -333,7 +334,8 @@
                         echo ($offset - OFFSET) < OFFSET ? '' : $offset-OFFSET; ?>">Previous</a>
                     </li>
                     <?php endif; ?>
-                    <?php if (count($vars) >= LIMIT_OF_BOOKS) :?>
+                    <?php $offset = (ceil($booksAmount/OFFSET) == 1) ? $offset + 1 : $offset;
+                    if (ceil($booksAmount/OFFSET) > $offset) :?>
                     <li class="page-item"><a class="page-link" href="/<?php
                         echo $offset + OFFSET; ?>">Next</a>
                     </li>
@@ -395,7 +397,7 @@
                 url: "/statistic",
                 dataType: "json",
                 data: {
-                    "id": btn[0].attributes[0].value,
+                    "img": btn[0].attributes[0].value,
                 }
             });
             let XHR = new XMLHttpRequest();

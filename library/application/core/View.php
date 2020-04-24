@@ -34,11 +34,6 @@ class View {
         exit();
     }
 
-    public static function showError($id) {
-         echo "<script>alert('Фото книги должно иметь уникальное числовое имя. Имя $id уже занято. Вернитесь назад!');</script>";
-         exit();
-    }
-
     public static function errorCode($code) {
         http_response_code($code);
         require "application/views/errors/" . $code . ".php";

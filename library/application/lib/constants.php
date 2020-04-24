@@ -1,4 +1,3 @@
 <?php
 
-define('OFFSET', 2);
-define('LIMIT_OF_BOOKS', 2);
+define('OFFSET', 10);

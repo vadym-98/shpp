@@ -39,7 +39,17 @@
                                         $("#search").bind("keypress", function (e) {
                                             if (e.keyCode == 13) {
                                                 e.preventDefault();
-                                                alert("а вот это придется сделать самому. Ваш @rshmelev");
+                                                let btn = $(this);
+                                                window.location=`/?book_name=` + btn.val();
+                                                // $.ajax({
+                                                //     method: "POST",
+                                                //     url: "/",
+                                                //     dataType: "json",
+                                                //     data: {
+                                                //         "name": (btn.val()),
+                                                //     }
+                                                // });
+                                                // console.log(btn.val());
                                             }
                                         })
                                     </script>

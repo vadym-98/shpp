@@ -1,40 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc563c0-37e7-4954-b085-c9e913e11bca" name="Default Changelist" comment="" />
+    <list default="true" id="ffbd427d-9990-486d-bf01-62163d146b69" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/phpmyadmin/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/twig-i18n-extension" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/motranslator" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/sql-parser" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/tecnickcom/tcpdf" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpmyadmin/shapefile" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/pragmarx/google2fa-qrcode" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/composer" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/samyoul/u2f-php-server" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/cache-contracts" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/google/recaptcha" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/williamdes/mariadb-mysql-kbs" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/phpmyadmin/vendor/symfony/config" />
+    </include_path>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
-  <component name="ProjectId" id="1aFvHcQX8V6ySQlDCfk1rgBP0or" />
+  <component name="ProjectId" id="1awQut6cqNjlRoooIMScO26qixb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -43,50 +59,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/book" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/images/book" />
-      <recent name="$PROJECT_DIR$/book-page/book-page_files" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/css" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../library2" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fcc563c0-37e7-4954-b085-c9e913e11bca" name="Default Changelist" comment="" />
-      <created>1586344069159</created>
+      <changelist id="ffbd427d-9990-486d-bf01-62163d146b69" name="Default Changelist" comment="" />
+      <created>1587644401653</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586344069159</updated>
-      <workItem from="1586344070701" duration="494000" />
-      <workItem from="1586359202858" duration="18030000" />
-      <workItem from="1586416772120" duration="30000000" />
-      <workItem from="1586461476491" duration="7000" />
-      <workItem from="1586501914132" duration="28983000" />
-      <workItem from="1586594258569" duration="6777000" />
-      <workItem from="1586678170865" duration="18715000" />
-      <workItem from="1586721777379" duration="604000" />
-      <workItem from="1586764110584" duration="21000" />
-      <workItem from="1586765655354" duration="1886000" />
-      <workItem from="1586777088325" duration="56000" />
-      <workItem from="1586780626377" duration="1141000" />
-      <workItem from="1586855372494" duration="17093000" />
-      <workItem from="1586966787663" duration="3961000" />
-      <workItem from="1586972938332" duration="3390000" />
-      <workItem from="1586976875216" duration="332000" />
-      <workItem from="1587017440482" duration="1027000" />
-      <workItem from="1587027170121" duration="21139000" />
-      <workItem from="1587061307602" duration="4893000" />
-      <workItem from="1587108808749" duration="3434000" />
+      <updated>1587644401653</updated>
+      <workItem from="1587644403001" duration="690000" />
+      <workItem from="1587720528741" duration="184000" />
     </task>
     <servers />
   </component>
@@ -94,49 +80,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="328" y="27" width="700" height="741" key="#PHP" timestamp="1586432204089">
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1587720710824">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="328" y="27" width="700" height="741" key="#PHP/0.27.1366.741@0.27.1366.741" timestamp="1586432204089" />
-    <state x="400" y="201" width="555" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586527970388">
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1587720710824" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1587720697918">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="400" y="201" width="555" height="390" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1586527970388" />
-    <state x="491" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1586888905447">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="491" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1586888905447" />
-    <state x="435" y="27" width="476" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586431414453">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="435" y="27" width="476" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.741@0.27.1366.741" timestamp="1586431414453" />
-    <state x="416" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586688150999">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="416" y="154" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.27.1366.741@0.27.1366.741" timestamp="1586688150999" />
-    <state x="424" y="268" width="545" height="373" key="NewPhpClassDialog" timestamp="1586888574199">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="424" y="268" width="545" height="373" key="NewPhpClassDialog/0.27.1366.741@0.27.1366.741" timestamp="1586888574199" />
-    <state x="478" y="322" width="399" height="149" key="NewPhpFileDialog" timestamp="1586887266328">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="478" y="322" width="399" height="149" key="NewPhpFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1586887266328" />
-    <state x="100" y="125" width="1166" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586512669350">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="100" y="125" width="1166" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1366.741@0.27.1366.741" timestamp="1586512669350" />
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1587119962573">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1587119962573" />
-    <state x="347" y="175" key="run.anything.popup" timestamp="1586878364698">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="347" y="175" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1586878364698" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1586509312631">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1586509312631" />
+    <state x="339" y="224" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1587720697918" />
   </component>
 </project>

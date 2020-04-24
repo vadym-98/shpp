@@ -2,6 +2,7 @@
 
 namespace application\lib;
 
+use application\core\Error;
 use application\core\View;
 use PDO;
 
@@ -24,7 +25,7 @@ class DB {
         }
         $result = $stmt -> execute($params);
         if ($result == false) {
-            View::showError($params["id"]);
+            Error::showWrongImage($params["img"]);
         }
         return $stmt;
     }
@@ -37,5 +38,9 @@ class DB {
     public function column($sql, $params = []) {
         $result = $this->query($sql, $params);
         return $result->fetchColumn();
+    }
+
+    public function lastIndex() {
+        return $this->db->lastInsertId();
     }
 }
